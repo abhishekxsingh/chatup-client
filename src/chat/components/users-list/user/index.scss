@@ -1,0 +1,114 @@
+.discussion {
+  width: 100%;
+  height: 90px;
+  background-color: #fafafa;
+  border-bottom: solid 1px #e0e0e0;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+
+  & .search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #e0e0e0;
+  }
+
+  & .search .searchbar {
+    height: 40px;
+    background-color: #fff;
+    width: 90%;
+    padding: 0 20px;
+    border-radius: 50px;
+    border: 1px solid #eeeeee;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  & .search .searchbar input {
+    margin-left: 15px;
+    height: 38px;
+    width: 100%;
+    border: none;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  & .search .searchbar *::-webkit-input-placeholder {
+    color: #e0e0e0;
+  }
+  & .search .searchbar input *:-moz-placeholder {
+    color: #e0e0e0;
+  }
+  & .search .searchbar input *::-moz-placeholder {
+    color: #e0e0e0;
+  }
+  & .search .searchbar input *:-ms-input-placeholder {
+    color: #e0e0e0;
+  }
+
+   &.message-active {
+    width: 98.5%;
+    height: 90px;
+    background-color: #fff;
+    border-bottom: solid 1px #e0e0e0;
+  }
+
+  .photo {
+    margin-left: 20px;
+    display: block;
+    width: 45px;
+    height: 45px;
+    background: #e6e7ed;
+    border-radius: 50px;
+    border-radius: 50px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .online {
+      position: relative;
+      top: 30px;
+      left: 35px;
+      width: 13px;
+      height: 13px;
+      background-color: #8bc34a;
+      border-radius: 13px;
+      border: 3px solid #fafafa;
+    }
+  } 
+
+  .desc-contact {
+    height: 43px;
+    width: 50%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .name {
+    margin: 0 0 0 20px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 11pt;
+    color: #515151;
+  }
+
+  .message {
+    margin: 6px 0 0 20px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 9pt;
+    color: #515151;
+  }
+
+  .timer {
+    margin-left: 15%;
+    font-family: "Open Sans", sans-serif;
+    font-size: 11px;
+    padding: 3px 8px;
+    color: #bbb;
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 15px;
+  }
+}

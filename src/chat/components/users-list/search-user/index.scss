@@ -1,0 +1,49 @@
+.discussion {
+  width: 100%;
+  height: 90px;
+  background-color: #fafafa;
+  border-bottom: solid 1px #e0e0e0;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  &.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #a11717;
+  }
+
+  &.search .searchbar {
+    height: 40px;
+    background-color: #f3f1f1;
+    width: 90%;
+    padding: 0 20px;
+    border-radius: 50px;
+    border: 1px solid #080808;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  &.search .searchbar input {
+    margin-left: 15px;
+    height: 38px;
+    width: 100%;
+    border: none;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  &.search .searchbar *::-webkit-input-placeholder {
+    color: #0e0d0d;
+  }
+  &.search .searchbar input *:-moz-placeholder {
+    color: #e0e0e0;
+  }
+  &.search .searchbar input *::-moz-placeholder {
+    color: #e0e0e0;
+  }
+  &.search .searchbar input *:-ms-input-placeholder {
+    color: #e0e0e0;
+  }
+}

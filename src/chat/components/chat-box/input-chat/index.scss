@@ -1,0 +1,37 @@
+$color_1: #c0c0c0;
+
+.write-message {
+  border: none !important;
+  width: 60%;
+  height: 50px;
+  margin-left: 20px;
+  padding: 10px;
+}
+.footer-chat {
+  * {
+    &::-webkit-input-placeholder {
+      color: $color_1;
+      font-size: 13pt;
+    }
+  }
+  input {
+    * {
+      &:-moz-placeholder {
+        color: $color_1;
+        font-size: 13pt;
+      }
+      &::-moz-placeholder {
+        color: $color_1;
+        font-size: 13pt;
+        margin-left: 5px;
+      }
+      &:-ms-input-placeholder {
+        color: $color_1;
+        font-size: 13pt;
+      }
+    }
+  }
+}
+.clickable {
+  cursor: pointer;
+}

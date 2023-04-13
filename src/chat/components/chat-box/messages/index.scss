@@ -1,0 +1,98 @@
+$color_1: lightgrey;
+$color_2: #c0c0c0;
+$color_3: #fff;
+$color_4: #515151;
+$font-family_1: "Montserrat", sans-serif;
+$background-color_1: #f6f6f6;
+$background-color_2: #e3effd;
+$background-color_3: transparent;
+$background-color_4: #4f6ebd;
+
+.chat {
+  .messages-chat {
+
+    overflow: auto;
+    height: 60vh;
+    padding: 25px 35px;
+    .message {
+      display: flex;
+      align-items: center;
+      margin-bottom: 8px;
+      .photo {
+        display: block;
+        width: 45px;
+        height: 45px;
+        background: #e6e7ed;
+        -moz-border-radius: 50px;
+        border-radius: 50px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+    }
+    .text {
+      margin: 0 35px;
+      background-color: $background-color_1;
+      padding: 15px;
+      border-radius: 12px;
+    }
+  }
+  .footer-chat {
+    .icon {
+      margin-left: 30px;
+      color: $color_2;
+      font-size: 14pt;
+    }
+    .send {
+      color: $color_3;
+      background-color: $background-color_4;
+      position: absolute;
+      right: 50px;
+      padding: 12px 12px 12px 12px;
+      border-radius: 50px;
+      font-size: 14pt;
+    }
+    .name {
+      margin: 0 0 0 20px;
+      text-transform: uppercase;
+      font-family: $font-family_1;
+      font-size: 13pt;
+      color: $color_4;
+    }
+    .right {
+      position: absolute;
+      right: 40px;
+    }
+  }
+}
+.text-only {
+  margin-left: 45px;
+}
+.time {
+  font-size: 10px;
+  color: $color_1;
+  margin-bottom: 10px;
+  margin-left: 85px;
+}
+.response-time {
+  float: right;
+  margin-right: 40px !important;
+}
+.response {
+  float: right;
+  margin-right: 0px !important;
+  margin-left: auto;
+  .text {
+    background-color: $background-color_2 !important;
+  }
+}
+.footer-chat {
+  width: calc(65% - 66px);
+  height: 80px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  background-color: $background-color_3;
+  border-top: 2px solid #eee;
+}
